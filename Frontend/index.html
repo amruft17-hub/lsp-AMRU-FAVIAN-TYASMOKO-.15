@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Data Siswa</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        box-sizing: border-box;
+        background: #f1f5f9;
+        color: #1e293b;
+        font-family: Arial, sans-serif;
+      }
+
+      .startup-state {
+        max-width: 420px;
+        padding: 28px;
+        border-radius: 12px;
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+      }
+
+      .startup-state button {
+        margin-top: 12px;
+        padding: 10px 16px;
+        border: 0;
+        border-radius: 6px;
+        background: #2563eb;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <main class="startup-state">
+        <h1>Dashboard Data Siswa</h1>
+        <p>Halaman sedang dimuat. Jika tidak berubah, muat ulang halaman.</p>
+        <button type="button" onclick="window.location.reload()">Muat Ulang</button>
+      </main>
+      <noscript>
+        <p class="startup-state">Aktifkan JavaScript di browser untuk menggunakan dashboard ini.</p>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
